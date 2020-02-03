@@ -10,7 +10,7 @@
 * [back-end](https://apprenti-401-lab-14.herokuapp.com/)
 
 #### Documentation
-* [api docs]()
+* [api docs](/Users/lpeltier/DevStation/devstation/401/labs/Apprenti-401-Lab-14/docs/apprenti-401-lab-14.json)
 * [docs](./docs) 
 
 ### Setup
