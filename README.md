@@ -11,7 +11,7 @@
 
 #### Documentation
 * [api docs]()
-* [docs]() 
+* [docs](./docs) 
 
 ### Setup
 #### `.env` requirements (where applicable)
@@ -42,4 +42,4 @@
 * Lint Tests: `npm run lint`
 
 #### UML
-![]()
+![UML](/Users/lpeltier/DevStation/devstation/401/labs/Apprenti-401-Lab-14/assets/Lab14UML.jpeg)
