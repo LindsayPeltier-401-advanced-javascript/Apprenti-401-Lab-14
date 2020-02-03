@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oauth Test</title>
+  </head>
+
+  <body>
+    <main>
+      <a id="oauth" href="#">Login</a>
+    </main>
+
+
+    <script>
+      // github oauth
+      //link to github oauth
+      // let url = "https://github.com/login/oauth/authorize";
+      let url = 'https://accounts.google.com/o/oauth2/v2/auth';
+      console.log(url);
+      // query options
+      let options = {
+        client_id: '521599594748-viaklq1jp4bprmor49nkhk0bn1a2hpr7.apps.googleusercontent.com',
+        redirect_uri: 'http://localhost:3000/oauth',
+        response_type: 'code',
+        scope: 'openid profile email',
+        // state: '401appconsent',
+      };
+      // create query string for request
+      let queryString = Object.keys(options).map(key => {
+        return `${key}=` + encodeURIComponent(options[key]);
+      }).join('&');
+      // create full link
+      let authUrl = `${url}?${queryString}`;
+      // get htmel like by ide and set the href attribut to the authUrl
+      let link = document.getElementById('oauth');
+      link.setAttribute('href', authUrl);
+    </script>
+  </body>
+
+</html>
