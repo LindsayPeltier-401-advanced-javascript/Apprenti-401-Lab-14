@@ -13,7 +13,7 @@ const additionalRouter = require('./additional-routes');
 
 // swagger
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../docs/config/swagger.json');
+//const swaggerDocument = require('../docs/config/swagger.json');
 
 // Prepare the express app
 const app = express();
@@ -31,7 +31,7 @@ app.use(express.static('public'));
 app.use(authRouter);
 app.use(additionalRouter);
 app.use('/api-docs', swaggerUi.serve);
-app.get('/api-docs', swaggerUi.setup(swaggerDocument));
+//app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 // Catchalls
 app.use(notFound);
