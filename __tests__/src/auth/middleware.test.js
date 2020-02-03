@@ -14,9 +14,9 @@ let users = {
 
 beforeAll(async (done) => {
   await supergoose.startDB();
-  const adminUser = await new Users(users.admin).save();
-  const editorUser = await new Users(users.editor).save();
-  const userUser = await new Users(users.user).save();
+  // const adminUser = await new Users(users.admin).save();
+  // const editorUser = await new Users(users.editor).save();
+  // const userUser = await new Users(users.user).save();
   done();
 });
 
